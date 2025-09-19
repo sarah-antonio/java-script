@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Relógio Analógico</title>
+  <style>
+    body {
+      background: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .clock {
+      width: 300px;
+      height: 300px;
+      border: 8px solid #fff;
+      border-radius: 50%;
+      position: relative;
+      background: #000;
+    }
+
+    .center {
+      width: 12px;
+      height: 12px;
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+    }
+
+    .hand {
+      width: 50%;
+      height: 4px;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: transform 0.05s ease-in-out;
+    }
+
+    .hour { height: 6px; background: #f00; }
+    .minute { height: 4px; background: #0f0; }
+    .second { height: 2px; background: #00f; }
+  </style>
+</head>
+<body>
+  <div class="clock">
+    <div class="hand hour" id="hour-hand"></div>
+    <div class="hand minute" id="minute-hand"></div>
+    <div class="hand second" id="second-hand"></div>
+    <div class="center"></div>
+  </div>
+
+  <script>
+    const hourHand = document.getElementById('hour-hand');
+    const minuteHand = document.getElementById('minute-hand');
+    const secondHand = document.getElementById('second-hand');
+
+    function updateClock() {
+      const now = new Date();
+      const seconds = now.getSeconds();
+      const minutes = now.getMinutes();
+      const hours = now.getHours();
+
+      const secondDeg = seconds * 6;
+      const minuteDeg = minutes * 6 + seconds * 0.1;
+      const hourDeg = (hours % 12) * 30 + minutes * 0.5;
+
+      secondHand.style.transform = `rotate(${secondDeg}deg)`;
+      minuteHand.style.transform = `rotate(${minuteDeg}deg)`;
+      hourHand.style.transform = `rotate(${hourDeg}deg)`;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock(); // atualizar imediatamente ao carregar
+  </script>
+</body>
+</html>
