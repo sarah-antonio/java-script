@@ -1,0 +1,261 @@
+// let num1 = 17
+// let num2 = 19
+// let soma = num1 + num2
+// console.log(soma)
+
+
+// let base = 5
+// let altura = 2 
+// let area = base*altura
+// console.log(area)
+
+
+// let celsius = 21 
+// let fahrenheit = celsius*9/5+32
+// console.log(fahrenheit)
+
+
+// let numA = 15
+// let numB = 19
+// let numC = 23
+// let media = (numA+numB+numC) /3
+// console.log (media)
+
+
+//let num1 = 20
+//let num2 = 34
+//multiplicacao = num1*num2
+//console.log (multiplicacao)
+
+
+// num = 0
+// if (num>0){
+//     console.log("positivo")
+// }else if(num<0){
+//     console.log("negativo")
+// }else{
+//     console.log("zero")
+// }
+
+
+// idade = 18 
+// if(idade>=18){
+//     console.log("maior de idade")
+// }else{
+//     console.log("menor de idade")
+// }
+
+
+// num = 3
+// if(num%2 ==0){
+//     console.log("par")
+// }else{
+//     console.log("impar")
+// }
+
+
+// nota1= 8
+// nota2=10
+// media = (nota1+nota2)/2
+// if (media>=7){
+//     console.log("aprovado")
+// }else{
+//     console.log("reprovado")
+// }
+
+
+// num1=30
+// num2=29
+// num3=40
+// if(num1>num2 && num1>num3){
+//     console.log("o primeiro numero e maior")
+// }else if(num2>num1 && num2>num3){
+//     console.log("o segundo numero e maior")
+// }else if(num3>num1 && num3>num2){
+//     console.log("o terceiro numero e maior")
+// }else{
+//     console.log("dois ou mais numeros sao iguais")
+// }
+
+
+// let idade = 10
+// if(idade<12){
+//     console.log("crianca")
+// }else if (idade<=17){
+//     console.log("adolecente")
+// }else if (idade<=59){
+//     console.log( "adulto")
+// }else{
+//     console.log("idoso")
+// }
+
+
+// let ano = 2020
+// if(ano % 4 == 0 && ano % 100 != 0){
+//     console.log("o ano e bissexto")
+// }else if (ano % 400 == 0){
+//     console.log("o ano e bissexto")
+// }else{
+//     console.log("o ano nao e bissexto")
+// }
+
+
+// let num1 = 12
+// let num2 =15
+// let operacao = "*"
+// switch (operacao){
+//     case"+":
+//     console.log(num1+num2)
+//     break
+//     case"-":
+//     console.log(num1-num2)
+//     break
+//     case"*":
+//     console.log(num1*num2)
+//     break
+//     case"/":
+//     console.log(num1 /num2)
+//     break
+//     default:
+//         console.log("operacao invalida")
+// }
+
+
+// let diadasemana=5
+// switch(diadasemana){
+//     case 1: 
+//     console.log("domingo")
+//     break
+//     case 2: 
+//     console.log("segunda-feira")
+//     break
+//     case 3: 
+//     console.log("terça-feira")
+//     break
+//     case 4: 
+//     console.log("quarta-feira")
+//     break
+//     case 5: 
+//     console.log("quinta-feira")
+//     break
+//     case 6: 
+//     console.log("sexta-feira")
+//     break
+//     case 7: 
+//     console.log("sabado")
+//     break
+//     default:
+//         console.log("dia invalido ")
+// }
+
+
+// let nota = 6
+// if(nota>=9){
+//     console.log("A")
+// }else if(nota>=7){
+//     console.log("B")
+// }else if(nota>=5){
+//     console.log("C")
+// }else if(nota>=3){
+//     console.log("D")
+// }else{
+// console.log("f")
+// }
+
+
+// for(let i =1; i< 11; i ++){
+//     console.log(i)
+// }
+
+
+// let soma =0
+// for(let i = 1; i<=100; i ++){
+//     soma+= i 
+// }
+// console.log(soma)
+
+
+// let numero = 7
+// for (let i= 1; i <= 10; i++){
+//     console.log(`${numero}x${i}=${numero* i }`)
+// }
+
+
+// let i = 10 
+// while(i>= 1 ){
+//     console.log(i)
+//     i --
+// }
+
+
+// for(let i = 1;i<=50;i++){
+//     if(i%2==0){
+//         console.log(i)
+//     }
+// }
+
+
+// let num = 5
+// let fatorial = 1 
+//  for(let i = num;i>0; i --){
+//     fatorial*= i
+//  }
+//  console.log(fatorial)
+
+
+// Array=["sarah","eduardo","amanda","patrick","isabela"]
+// Array.forEach(nome=>console.log(nome))
+
+
+// let Array =[4,7,8,9,3]
+// for(let i =0; i <Array.length;i ++) {
+//     if(array[i]%2 ==0 ) {
+//         console.log(array[i])
+//     }
+// } 
+
+
+// let array = [1,2,3,4]
+// let soma = 0 
+// for(let i = 0 ; i <array.length;i++){
+//     soma+=array[i]
+// }
+// console.log(soma)
+
+
+// let array=[5,9,3,4]
+// let maiornumero= Math.max (...array)
+// console.log(maiornumero)
+
+
+// let array=["blusa","calça"]
+// let elemento="blusa"
+// console.log(array.includes(elemento))
+
+
+// array=[1,2,3,4,5]
+// elemento = 6 
+// array.push(elemento)
+// console.log(array)
+
+// let array = [1,5,4,3]
+// array.pop()
+// console.log(array)
+
+
+// let cabeças = 10
+// let patas =32
+// let porcos=0
+// let galinhas=0
+
+// while((porcos+1 )* 4 <=patas){
+//     porcos++
+// }
+// galinhas= cabeças-porcos
+// while(galinhas*2+porcos*4!=patas){
+//     porcos--
+//     galinhas++
+
+// }
+// console.log(`galinhas:${galinhas}`)
+// console.log(`porcos:${porcos)
