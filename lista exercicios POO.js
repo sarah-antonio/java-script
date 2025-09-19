@@ -17,7 +17,7 @@
 // class piano extends InstrumentoMusical{
 //     tocar(){
 //         console.log('som do piano')
-//     }
+//     }iki
 // }
 
 // let instrumento1 = new violao()
